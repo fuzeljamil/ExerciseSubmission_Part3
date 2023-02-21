@@ -1,0 +1,37 @@
+GET http://localhost:3001/api/persons
+###
+GET http://localhost:3001/info
+###
+GET http://localhost:3001/api/persons/2
+###
+DELETE http://localhost:3001/api/persons/2
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name":"John Doe",
+    "number":"22-41-244365"
+}
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "number":"22-41-244365"
+}
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name":"John Doe"
+}
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name":"John Doe",
+    "number":"22-41-244365"
+}
