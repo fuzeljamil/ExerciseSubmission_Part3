@@ -6,6 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(morgan("tiny"));
 app.use(cors());
+// middleware to serve static content from the given directory.
 app.use(express.static("build"));
 
 let persons = [
