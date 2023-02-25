@@ -6,12 +6,13 @@ const app = express();
 app.use(express.json());
 app.use(morgan("tiny"));
 app.use(cors());
+app.use(express.static("build"));
 
 let persons = [
   {
     id: 1,
     name: "Arto Hellas",
-    number: "040-123456",
+    number: "000-123456",
   },
   {
     id: 2,
